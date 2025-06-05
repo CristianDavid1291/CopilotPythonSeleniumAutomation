@@ -14,4 +14,5 @@ except Exception as e:
 # finally block 
 finally:
     print("This block always executes, regardless of whether an exception occurred or not.")
+
     
