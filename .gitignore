@@ -75,3 +75,9 @@ Desktop.ini
 
 # Local test config
 selenium_config.json
+
+# html files
+*.html
+
+# css files
+*.css
