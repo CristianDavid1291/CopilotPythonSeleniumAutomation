@@ -1,4 +1,5 @@
 import pytest
+from selenium import webdriver
 
 @pytest.fixture()
 def setup():
@@ -14,3 +15,9 @@ def dataLoad():
 @pytest.fixture(params=["chrome", "firefox", "safari"])
 def crossBrowser(request):
     return request.param
+
+@pytest.fixture(scope="module")
+def browserInstance():
+   driver = webdriver.Chrome()  # or any other browser driver
+   yield driver
+    
